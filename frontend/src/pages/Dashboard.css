@@ -1,0 +1,198 @@
+.dashboard {
+  padding: 40px 0;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  color: #1976d2;
+}
+
+.dashboard-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab:hover {
+  color: #1976d2;
+}
+
+.tab.active {
+  color: #1976d2;
+  border-bottom-color: #1976d2;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.dashboard-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.dashboard-actions {
+  margin-bottom: 20px;
+}
+
+.job-item {
+  margin-bottom: 15px;
+}
+
+.job-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-stats {
+  display: flex;
+  gap: 15px;
+  color: #666;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.job-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status.active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status.inactive {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.status.pending {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.status.reviewed {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+.status.shortlisted {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status.rejected {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.status.hired {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.application-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.application-item:last-child {
+  border-bottom: none;
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.application-item h3 {
+  color: #1976d2;
+  margin-bottom: 5px;
+}
+
+.applicant-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.application-details {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.application-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.status-select {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.profile-view p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.applied-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.empty-state .btn {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .job-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
